@@ -4,11 +4,23 @@
 Try to install as much as possible via anaconda before resorting to below:
 General Rule of thumb: If Module cannot be found. Try to install via conda command, last resort is to use pip
 
-### Compile Pytorch for compatiable with GTX3080
+### GPU-Related
+##### Compile Pytorch for compatiable with GTX3080
 conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
-### Torch.cuda.is_available() returns False, nvidia-smi is working
+##### Torch.cuda.is_available() returns False, nvidia-smi is working
 Remove pytorch and install again via the above command
-
+##### nvcc fatal : Unsupported GPU architecture 'compute_30'
+For Cuda 11:
+CUDA_ARCH="-gencode arch=compute_80,code=sm_80"
+For the rest:
+CUDA_ARCH="-gencode arch=compute_30,code=sm_30 \
+-gencode arch=compute_35,code=sm_35 \
+-gencode arch=compute_50,code=sm_50 \
+-gencode arch=compute_52,code=sm_52 \
+-gencode arch=compute_60,code=sm_60 \
+-gencode arch=compute_61,code=sm_61 \
+-gencode arch=compute_70,code=sm_70 "
+ 
 ### Torchtext
 ##### Torchtext conda
 conda install -c pytorch torchtext 
