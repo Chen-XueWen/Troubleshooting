@@ -1,4 +1,4 @@
-# Useful Comments
+# Useful Troubleshooting
 
 ### Anaconda FAQ
 Try to install as much as possible via anaconda before resorting to below:
