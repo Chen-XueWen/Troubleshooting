@@ -21,7 +21,11 @@ CUDA_ARCH="-gencode arch=compute_30,code=sm_30 \
 -gencode arch=compute_61,code=sm_61 \
 -gencode arch=compute_70,code=sm_70 "
  
-### Torchtext
+### Torch Related Issues:
+##### torch.utils.ffi not found
+Change from torch.utils.ffi import create_extension
+to torch.utils.cpp_extension import BuildExtension
+
 ##### Torchtext conda
 conda install -c pytorch torchtext 
 
