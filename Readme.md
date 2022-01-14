@@ -1,6 +1,6 @@
 # Useful Troubleshooting
 ## Ubuntu FAQ
-### Firefox unable to play video in Ubuntu
+### Firefox unable to play Luminus Lecture in Ubuntu
 sudo apt install ffmpeg
 
 
