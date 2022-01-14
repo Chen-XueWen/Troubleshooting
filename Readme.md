@@ -1,4 +1,7 @@
 # Useful Troubleshooting
+## Firefox unable to play video in Ubuntu
+sudo apt install ffmpeg
+
 
 ## Anaconda FAQ
 Try to install as much as possible via anaconda before resorting to below:
