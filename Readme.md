@@ -1,5 +1,6 @@
 # Useful Troubleshooting
-## Firefox unable to play video in Ubuntu
+## Ubuntu FAQ
+### Firefox unable to play video in Ubuntu
 sudo apt install ffmpeg
 
 
