@@ -47,6 +47,9 @@ source activate myenv or conda activate myenv
 python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
 Preferred Choice: Use Visual Studio Code for Jupyter
 
+In your environment type this:
+python -m ipykernel install --user --name=firstEnv
+
 ##### IProgress not found.
 Use Anaconda to install ipywidgets
 
