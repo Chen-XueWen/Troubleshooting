@@ -47,14 +47,15 @@ source activate myenv or conda activate myenv
 python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
 Preferred Choice: Use Visual Studio Code for Jupyter
 
-#### Allowing Internal Network
-jupyter notebook --ip 0.0.0.0 --port 8888
-
 In your environment type this:
 python -m ipykernel install --user --name=firstEnv
 
 ##### IProgress not found.
 Use Anaconda to install ipywidgets
+
+##### Allowing Internal Network
+jupyter notebook --ip 0.0.0.0 --port 8888
+
 
 ### Rstudio on Ubuntu via Conda
 Create new env for Rstudio, Rstudio cannot be installed in the base environment. Preferred solution is to create install Rstudio as independent application
