@@ -8,6 +8,11 @@ sudo apt install ffmpeg
 Try to install as much as possible via anaconda before resorting to below:
 General Rule of thumb: If Module cannot be found. Try to install via conda command, last resort is to use pip
 
+Backing up Environment and move to other servers:
+1. conda activate myEnv
+2. conda list --explicit > myEnvBkp.txt
+3. conda create --name myEnvRestored --file myEnvBkp.txt
+
 ### GPU-Related
 ##### Compile Pytorch for compatiable with GTX3080
 conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
