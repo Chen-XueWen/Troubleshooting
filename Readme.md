@@ -4,6 +4,7 @@
 sudo apt install ffmpeg
 ### Find out the user under specific PID
 ps -u -p $PID$
+ps -p $PID$ -o etime
 
 ## Anaconda FAQ
 Try to install as much as possible via anaconda before resorting to below:
