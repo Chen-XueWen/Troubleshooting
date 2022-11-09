@@ -2,7 +2,8 @@
 ## Ubuntu FAQ
 ### Firefox unable to play Luminus Lecture in Ubuntu
 sudo apt install ffmpeg
-
+### Find out the user under specific PID
+ps -u -p $PID$
 
 ## Anaconda FAQ
 Try to install as much as possible via anaconda before resorting to below:
