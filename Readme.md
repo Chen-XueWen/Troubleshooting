@@ -4,7 +4,7 @@
 sudo apt install ffmpeg
 ### Find out the user under specific PID
 ps -u -p $PID$
-
+### How long has the process ran?
 ps -p $PID$ -o etime
 
 ## Anaconda FAQ
