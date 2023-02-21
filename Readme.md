@@ -3,9 +3,9 @@
 ### Firefox unable to play Luminus Lecture in Ubuntu
 sudo apt install ffmpeg
 ### Find out the user under specific PID
-ps -u -p $PID$
+ps -u -p \$PID\$
 ### How long has the process ran?
-ps -p $PID$ -o etime
+ps -p \$PID\$ -o etime
 ### Updated from 20.04 to 22.04, Wifi stops working?
 vi /etc/modprobe.d/8821cu.conf
 comment away blacklisting
