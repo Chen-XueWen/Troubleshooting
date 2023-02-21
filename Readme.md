@@ -6,6 +6,10 @@ sudo apt install ffmpeg
 ps -u -p $PID$
 ### How long has the process ran?
 ps -p $PID$ -o etime
+### Updated from 20.04 to 22.04, Wifi stops working?
+vi /etc/modprobe.d/8821cu.conf
+comment away blacklisting
+
 
 ## Anaconda FAQ
 Try to install as much as possible via anaconda before resorting to below:
